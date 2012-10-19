@@ -311,9 +311,9 @@ class Moip {
                 }
             }
 
-            if ($varNotSeted !== '')
+            if ($varNotSeted !== '') {
                 $this->setError('Error: The following data required were not informed: ' . $varNotSeted . '.');
-
+			}
         }
         return $this;
     }
